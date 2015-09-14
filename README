@@ -1,0 +1,17 @@
+CPSC2120 Project 2: cpriest, Caleb Priester
+
+Contained in this folder ae the contents that make up Project 2.  There is a 
+graph with a header and c++ file.  There is also a driver that reads in a file
+of data to build a dictionary and a graph, and then reads another file 
+containing many pairs of numbers to build paths using two methods: Shortest 
+Paths and MCST.  Every ten successful searches results in the most recently 
+searched pair being removed from the dictionary and graph, and every five
+failed searches results in the numbers in the pair not already contained in the
+dictionary and added to the dictionary and graph.  A new MCST is built every 
+time the graph changes.  There are two methods for building MCSTs contained in
+the graph class, so each time buildMCST is called, one of the two is randomly
+selected for the building process.  Also contained are the files that I used to
+test the speeds of the two methods used for finding pathways.  The Makefile 
+creates all necessary executables when "make" is typed in.  To run the testing 
+programs, the code to print the shortest path mush be commented out of the 
+shortestPath method in graph.cpp.  Enjoy.
